@@ -1,0 +1,16 @@
+covariate,measure,gbd,include,constraint
+access2,mean,F,T,0
+aridity,mean,F,T,0
+lst_avg_v6,mean_mean,F,T,0
+dmspntl,mean,F,T,0
+elevation,log10,F,T,0
+ghslurbanicity,mean,F,T,0
+ihmepm25,mean,F,T,0
+satpm25,mean,F,T,0
+worldpop,total,F,T,0
+landcover,proportionalclass13,F,T,0
+mswep,rollmean_5y,F,T,0
+wp_poverty,mean,F,T,0
+acled_protests,mean,F,T,0
+acled_violence,mean,F,T,0
+tb_facil_density,mean,F,T,0
