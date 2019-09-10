@@ -10,10 +10,10 @@
 
 ## SET INPUTS
 
-core_repo <- '/share/code/geospatial/nathenry/lbd_core/'
+core_repo <- '<<FILEPATH>>'
 
-asset_dir <- '/share/geospatial/mbg/tb/kit/model_assets/'
-lu_dir <- '/ihme/limited_use/LIMITED_USE/LU_GEOSPATIAL/KIT_TB_Project/'
+asset_dir <- '<<FILEPATH>>'
+lu_dir <- '<<FILEPATH>>'
 facil_fp <- paste0(lu_dir, 'facility/pak_dis_facility_dens.csv')
 conflict_fp <- paste0(lu_dir, 'conflict/all_years_Adm2_conflict_violence.csv')
 years <- 2010:2018
@@ -36,7 +36,7 @@ ad2_shp <- sf::st_read(paste0(asset_dir,'pak_ad2.shp'))
 link_list <- readRDS(paste0(asset_dir,'/pak_link_list.RDS'))
 subset_shape <- load_simple_polygon(
   gaul_list = gaul_list, buffer = 1, tolerance = 0.4,
-  custom_shapefile_path = '/share/geospatial/mbg/tb/kit/model_assets/pak_ad2.shp'
+  custom_shapefile_path = '<<FILEPATH>>'
 )[[1]]
 simple_raster <- build_simple_raster_pop(subset_shape, link_table=NULL)$simple_raster
 

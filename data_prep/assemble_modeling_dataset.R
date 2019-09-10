@@ -13,24 +13,21 @@
 
 # Code filepaths
 user <- 'nathenry'
-core_repo <- sprintf('/share/code/geospatial/%s/lbd_core/',user)
+core_repo <- '<<FILEPATH>>'
 
-# Year of the prevalence survey
+# Year when most prevalence survey data was collected
 svy_year <- 2011
 
 ## Data filepaths
 # Survey microdata
-kit_dir <- '/ihme/limited_use/LIMITED_USE/LU_GEOSPATIAL/KIT_TB_Project/'
+kit_dir <- '<<FILEPATH>>'
 # Input survey microdata
-tb_prev_micro_fp <- paste0(
-  '/ihme/limited_use/LIMITED_USE/PROJECT_FOLDERS/PAK/NTP_TB_HACKATHON_KIT/',
-  '1 Prevalence Survey Cluster Estimates/prevalence_survey_case_based_2010_2011.xlsx'
-)
+tb_prev_micro_fp <- '<<FILEPATH>>'
 # Point-polygon resampled cluster locations
-ptpoly_file <- paste0(kit_dir, '/prep/data_prep/prevalence_survey_point_resampled.csv')
+ptpoly_file <- '<<FILEPATH>>'
 # Output filepaths
-out_file <- paste0(kit_dir,'/prep/data_prep/kit_collapsed_resampled.csv')
-out_file_mbg <- '/share/geospatial/mbg/input_data/kit_tb_test_dataset_20190809'
+out_file <- '<<FILEPATH>>'
+out_file_mbg <- '<<FILEPATH>>'
 
 ## SETUP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

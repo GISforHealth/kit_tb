@@ -21,29 +21,20 @@ core_repo <- sprintf('/share/code/geospatial/%s/lbd_core/',user)
 svy_year <- 2011
 
 # Data filepaths
-kit_dir <- '/ihme/limited_use/LIMITED_USE/LU_GEOSPATIAL/KIT_TB_Project/'
-geomatching_fp <- paste0(
-  kit_dir,'/prep/raw_data/prevalence_survey_geomatched_20190806.csv'
-)
+kit_dir <- '<<FILEPATH>>'
+geomatching_fp <- '<<FILEPATH>>'
 
 # Shapefile filepaths and identifying codes
-ad3_shp_fp <- paste0(
-  kit_dir,'/shapefiles/HDX_Shp_Admin2/pak_adm_ocha_pco_gaul_20181218_SHP/',
-  'pak_admbnda_adm3_ocha_pco_gaul_20181218.shp'
-)
+ad3_shp_fp <- '<<FILEPATH>>'
 ad3_id <- 'ADM3_PCODE'
-ad4_shp_fp <- paste0(
-  kit_dir,'shapefiles/HDX_Shp_Admin3/Adminbdy Shapefile/Union_Council.shp'
-)
+ad4_shp_fp <- '<<FILEPATH>>'
 ad4_id <- 'UC_C'
 
 # Link table filepath (to be created and saved if the file does not exist)
-ad4_link_fp <- paste0(
-  kit_dir,'shapefiles/HDX_Shp_Admin3/Adminbdy Shapefile/Union_Council_link.RDS'
-)
+ad4_link_fp <- '<<FILEPATH>>'
 
 # Output file for geocoding
-out_file <- paste0(kit_dir, '/prep/data_prep/prevalence_survey_point_resampled.csv')
+out_file <- '<<FILEPATH>>'
 
 
 ## SETUP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

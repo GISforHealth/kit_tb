@@ -9,12 +9,9 @@
 
 ## SET INPUTS 
 
-core_repo <- '/share/code/geospatial/nathenry/lbd_core/'
-asset_dir <- '/share/geospatial/mbg/tb/kit/model_assets/'
-raw_wp_dir <- paste0(
-  '/home/j/WORK/11_geospatial/01_covariates/03_Raw_WorldPop/update_100m_20190122/',
-  '2007/agg1k/'
-)
+core_repo <- '<<FILEPATH>>'
+asset_dir <- '<<FILEPATH>>'
+raw_wp_dir <- '<<FILEPATH>>'
 modeling_shapefile_version <- '2019_05_06'
 
 ## SETUP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -138,7 +135,7 @@ pov_by_ad2 <- merge(
   by='ADM2_CODE',
   all.x=TRUE
 )
-## ** Fill India-controlled Kashmir with data from a separate source **
+## ** Fill India-administered Kashmir with data from a separate source **
 # Source: "Table 162, Number and Percentage of Population Below Poverty Line". 
 #   Reserve Bank of India, Government of India. 2013. Retrieved April 20, 2014.
 pov_by_ad2[ADM2_CODE==0, pov:=.1035]

@@ -23,17 +23,17 @@
 ## SET INPUTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Path to LBD Core repository
-core_repo <- '/share/code/geospatial/nathenry/lbd_core/'
+core_repo <- '<<FILEPATH>>'
 
 # Path to extracted covariates data file (in CSV format). This file should only
 #  contain the covariates to be vetted, extracted at locations where data exists.
-covs_file <- '/share/geospatial/mbg/tb/kit/model_assets/extracted_covs_full_20190826.csv'
+covs_file <- '<<FILEPATH>>'
 
 # Path to covariates config file in repository
-cov_config_fp <- '/share/code/geospatial/nathenry/kit_tb/covs_kit.csv'
+cov_config_fp <- '<<FILEPATH>>'
 
 # Path to directory where VIF outputs will be saved.
-mbg_input_dir <- save_dir <- '/share/geospatial/mbg/tb/kit/model_assets/vif/'
+mbg_input_dir <- save_dir <- '<<FILEPATH>>'
 dir.create(save_dir, showWarnings=FALSE)
 
 # Vector of any covariate names that should be kept regardless of VIF results
